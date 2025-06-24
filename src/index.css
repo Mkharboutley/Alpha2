@@ -51,12 +51,17 @@
                 0 0 15px rgba(255, 255, 255, 0.05);
     outline: none;
     transition: all 0.3s ease;
+    color: rgba(255, 255, 255, 0.5); /* 50% opacity for input text */
   }
 
   .glass-input:focus {
     background: rgba(255, 255, 255, 0.08);
     border-color: rgba(255, 255, 255, 0.2);
-    
+    color: rgba(255, 255, 255, 0.7); /* Slightly more visible when focused */
+  }
+
+  .glass-input::placeholder {
+    color: rgba(255, 255, 255, 0.25); /* 50% less opacity for placeholder */
   }
 
   .glass-back-button {
@@ -86,7 +91,7 @@
   .elegant-button {
     background: rgba(255, 255, 255, 0.06);
     backdrop-filter: blur(20px);
-    color: white;
+    color: rgba(255, 255, 255, 0.5); /* 50% opacity for button text */
     font-weight: 600;
     border: 2px solid rgba(255, 255, 255, 0.12);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06),
@@ -99,6 +104,7 @@
   .elegant-button:hover:not(:disabled) {
     background: rgba(255, 255, 255, 0.1);
     border-color: rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.8); /* More visible on hover */
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1),
                 inset 0 1px 0 rgba(255, 255, 255, 0.12),
                 0 0 35px rgba(255, 255, 255, 0.15);

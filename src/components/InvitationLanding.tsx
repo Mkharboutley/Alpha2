@@ -57,11 +57,11 @@ export const InvitationLanding: React.FC<InvitationLandingProps> = ({ onInvitati
             {/* Wedding details */}
             <div className="mb-8 space-y-4">
               <div className="flex items-center justify-center text-amber-100 glass-detail-card p-3 rounded-xl">
-                <span className="text-sm font-medium">٤ يوليو ٢٠٢٥</span>
+                <span className="text-sm font-medium opacity-50">٤ يوليو ٢٠٢٥</span>
               </div>
               <div className="flex items-center justify-center text-amber-100 glass-detail-card p-3 rounded-xl">
-                <span className="text-sm ml-3 font-medium">فندق نادي الضباط، قاعة إرث</span>
-                <MapPin className="w-5 h-5 text-yellow-400 drop-shadow-md" />
+                <span className="text-sm ml-3 font-medium opacity-50">فندق نادي الضباط، قاعة إرث</span>
+                <MapPin className="w-5 h-5 text-yellow-400 drop-shadow-md opacity-50" />
               </div>
             </div>
 
@@ -74,7 +74,7 @@ export const InvitationLanding: React.FC<InvitationLandingProps> = ({ onInvitati
                   value={attendeeName}
                   onChange={(e) => setAttendeeName(e.target.value)}
                   placeholder="الرجاء إدخال الإسم الكامل"
-                  className="glass-input w-full px-4 py-4 rounded-xl text-center text-white placeholder-amber-200/70 font-medium"
+                  className="glass-input w-full px-4 py-4 rounded-xl text-center font-medium"
                   required
                   dir="rtl"
                 />
@@ -82,7 +82,7 @@ export const InvitationLanding: React.FC<InvitationLandingProps> = ({ onInvitati
 
               {error && (
                 <div className="glass-detail-card p-3 rounded-xl">
-                  <p className="text-red-300 text-sm">{error}</p>
+                  <p className="text-red-300 text-sm opacity-50">{error}</p>
                 </div>
               )}
 
@@ -93,8 +93,8 @@ export const InvitationLanding: React.FC<InvitationLandingProps> = ({ onInvitati
               >
                 {loading ? (
                   <div className="flex items-center justify-center">
-                    <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-white ml-3"></div>
-                    جاري المعالجة...
+                    <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-white ml-3 opacity-50"></div>
+                    <span className="opacity-50">جاري المعالجة...</span>
                   </div>
                 ) : (
                   <span>تأكيد الحضور</span>
