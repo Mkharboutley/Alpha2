@@ -115,7 +115,7 @@
                 0 0 20px rgba(255, 255, 255, 0.08);
   }
 
-  /* Gold button styling - with white shadows instead of yellow */
+  /* Gold button styling - with white shadows instead of amber */
   .gold-button {
     background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #d97706 100%);
     color: #92400e;
@@ -286,8 +286,13 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Custom selection colors */
+/* Custom selection colors - white glow instead of amber */
 ::selection {
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+::-moz-selection {
   background: rgba(255, 255, 255, 0.2);
   color: #ffffff;
 }
