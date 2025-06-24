@@ -41,14 +41,14 @@ export const InvitationLanding: React.FC<InvitationLandingProps> = ({ onInvitati
       <div className="relative z-10 min-h-screen flex items-center justify-center p-4">
         <div className="w-full max-w-md">
           {/* Main glassmorphism invitation card */}
-          <div className="glass-card p-8 text-center transform hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-amber-500/20">
+          <div className="glass-card p-8 text-center transform hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/20">
             {/* Header image */}
             <div className="flex justify-center mb-6">
               <div className="relative">
                 <img 
                   src="/Untitled.png" 
                   alt="Wedding Invitation Header" 
-                  className="w-full max-w-xs h-auto rounded-xl shadow-lg shadow-amber-500/20 drop-shadow-lg"
+                  className="w-full max-w-xs h-auto rounded-xl shadow-lg shadow-blue-500/20 drop-shadow-lg"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent rounded-xl"></div>
               </div>
@@ -56,13 +56,13 @@ export const InvitationLanding: React.FC<InvitationLandingProps> = ({ onInvitati
 
             {/* Wedding details with gold accents */}
             <div className="mb-8 space-y-4">
-              <div className="flex items-center justify-center text-amber-100 glass-detail-card p-3 rounded-xl">
+              <div className="flex items-center justify-center text-white-100 glass-detail-card p-3 rounded-xl">
                 <span className="text-sm ml-3 font-medium">٤ يوليو ٢٠٢٥</span>
-                <Calendar className="w-5 h-5 text-yellow-400 drop-shadow-md" />
+                <Calendar className="w-5 h-5 text-white-400 drop-shadow-md" />
               </div>
-              <div className="flex items-center justify-center text-amber-100 glass-detail-card p-3 rounded-xl">
+              <div className="flex items-center justify-center text-white-100 glass-detail-card p-3 rounded-xl">
                 <span className="text-sm ml-3 font-medium">فندق نادي الضباط، قاعة إرث</span>
-                <MapPin className="w-5 h-5 text-yellow-400 drop-shadow-md" />
+                <MapPin className="w-5 h-5 text-white-400 drop-shadow-md" />
               </div>
             </div>
 
@@ -75,7 +75,7 @@ export const InvitationLanding: React.FC<InvitationLandingProps> = ({ onInvitati
                   value={attendeeName}
                   onChange={(e) => setAttendeeName(e.target.value)}
                   placeholder="الرجاء إدخال الإسم الكامل"
-                  className="glass-input w-full px-4 py-4 rounded-xl text-center text-white placeholder-amber-200/70 font-medium"
+                  className="glass-input w-full px-4 py-4 rounded-xl text-center text-white placeholder-white-200/70 font-medium"
                   required
                   dir="rtl"
                 />
