@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Heart, Calendar, MapPin } from 'lucide-react';
+import { Heart, MapPin } from 'lucide-react';
 import { useWeddingInvitation } from '../hooks/useWeddingInvitation';
 import type { WeddingInvitation } from '../lib/supabase';
 
@@ -58,7 +58,6 @@ export const InvitationLanding: React.FC<InvitationLandingProps> = ({ onInvitati
             <div className="mb-8 space-y-4">
               <div className="flex items-center justify-center text-white-100 glass-detail-card p-3 rounded-xl">
                 <span className="text-sm ml-3 font-medium">٤ يوليو ٢٠٢٥</span>
-                <Calendar className="w-5 h-5 text-white-400 drop-shadow-md" />
               </div>
               <div className="flex items-center justify-center text-white-100 glass-detail-card p-3 rounded-xl">
                 <span className="text-sm ml-3 font-medium">فندق نادي الضباط، قاعة إرث</span>
